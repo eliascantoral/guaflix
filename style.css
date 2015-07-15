@@ -1,0 +1,281 @@
+/*
+Theme Name: Guaflix Theme
+Theme URI: http://myappsoftware.com
+Author: Augusto MC y Javier P
+Author URI: http://myappsoftware.com
+Description: <strong>New</strong> - Tema diseñado para plataforma de Guaflix.
+Version: 1.0
+License: Pendiente
+License URI: pendiente
+Tags: 
+Text Domain: guaflix
+
+BlankSlate WordPress Theme © 2011-2014 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative
+}
+body{
+    height:100% /* force the BODY element to match the height of the HTML element */
+    margin-bottom:200px;
+    background: rgba(20,20,20,1);
+    background: -moz-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(20,20,20,1)), color-stop(25%, rgba(17,17,17,1)), color-stop(51%, rgba(20,20,20,1)), color-stop(75%, rgba(17,17,17,1)), color-stop(100%, rgba(20,20,20,1)));
+    background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: -o-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: -ms-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#141414', GradientType=0 );
+}
+
+#canvasplayer{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    /*z-index:-1; /* Remove this line if it's not going to be a background! */
+}
+
+
+
+/******CAMBIOS JC***************/
+.panel-body-box{
+    background: rgba(20,20,20,1);
+    background: -moz-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(20,20,20,1)), color-stop(25%, rgba(17,17,17,1)), color-stop(51%, rgba(20,20,20,1)), color-stop(75%, rgba(17,17,17,1)), color-stop(100%, rgba(20,20,20,1)));
+    background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: -o-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: -ms-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(17,17,17,1) 25%, rgba(20,20,20,1) 51%, rgba(17,17,17,1) 75%, rgba(20,20,20,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#141414', GradientType=0 );
+}
+
+.slider_title {
+    margin-bottom:5px;
+    color:#000;
+    background-color: #DDD;
+}
+
+.footer 
+{ 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    /* Set the fixed height of the footer here */ 
+    height: 60px; 
+    background-color: #f5f5f5; 
+}
+
+
+
+
+
+
+#carrusel div img{
+	width:100%;
+}
+#carrusel_wrapper{
+  margin:0px 0px;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+.owl-theme .owl-controls .owl-buttons div:hover{
+	background-color: #F2F2F2;
+	color: #000;
+} 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0px;
+  top: 40%; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 0px;
+  top: 40%;
+}
+
+
+.slider_search_element{
+	float:left;
+	padding:10px;
+}
+
+
+.ih-item .info p{
+	padding:5px !important;	
+	text-align: left !important;
+	
+}
+
+
+.clear{
+	clear: both;
+}
+.slider_wrapper{
+	float: left;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	width:auto;
+}
+.personal_field{
+	color: #FFF;
+	width: 100%;
+	padding-right: 20px;
+	text-align: right;
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+#finder_wrapper{
+	display:none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.action-alert{
+	display: none;
+}
+#star_userpanel{
+	display: none;
+}
+#start_panel:hover #rating_panel{
+	display:none;
+}
+#start_panel:hover #star_userpanel{
+	display:block;
+}
+
+
+   
+
+
+
+
+/*****************************************************************************/
+/***************************STYLE CSS PROFILE*********************************/
+/*****************************************************************************/
+#object_info{
+    max-width: 900px;
+    width:auto;
+}
+
+
+#imagenesCards1{
+    background-image: url("img/cardsImage.png");
+    background-size: 300px 60px;
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 60px;
+}
+
+#imagenesCards2{
+    background-image: url("img/cardsImage.png");
+    background-size: 300px 60px;
+    background-repeat: no-repeat;
+    width: 104px;
+    height: 60px;
+    background-position: -104px;
+    margin-left: 1px;
+}
+
+#imagenesCards3{
+    background-image: url("img/cardsImage.png");
+    background-size: 300px 60px;
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 60px;
+    background-position: -209px;
+}
+
+.visa{
+    background-image: url("img/cardsImage.png");
+    background-size: 80px 25px;
+    background-repeat: no-repeat;
+    width: 28px !important;
+    height: 25px;
+    /*border:solid thin #000;*/
+    float:left;
+}
+
+.credomatic{
+    background-image: url("img/cardsImage.png");
+    background-size: 80px 25px;
+    background-repeat: no-repeat;
+    width: 28px !important;
+    height: 25px;
+    /*border:solid thin #000;*/
+    float:left;   
+    background-position: -28px;
+    margin-left: 1px;
+}
+
+.american{
+    background-image: url("img/cardsImage.png");
+    background-size: 80px 25px;
+    background-repeat: no-repeat;
+    width: 28px !important;
+    height: 25px;
+    /*border:solid thin #000;*/
+    float:left;   
+    background-position: -56px;
+    margin-left: 1px;
+}
+
+.objectbox{
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
