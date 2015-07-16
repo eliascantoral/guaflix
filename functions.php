@@ -73,7 +73,9 @@ function allowed_s3_mime_types() {
 }
 
 /*********************************************************************************************/
-include_once("logic/logic.php");
-include_once("logic/main_function.php");
-include_once("blocks/object_box.php");
-include_once("blocks/object_slider.php");
+include_once "logic/logic.php";
+include_once "blocks/object_box.php";
+include_once "blocks/object_slider.php";
+include_once "logic/main_function.php";
+include_once "logic/logic_serie.php";
+include_once 'logic/logic_objeto.php';

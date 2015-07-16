@@ -138,20 +138,22 @@ if(isset($_POST["action"])){
 		case "3":{////////Responce participant by post
 				if(isset($_POST["se"])){
 					$participants = get_field("participant",$_POST["se"]);
-					?>
-						<div class="panel panel-default">
-						  <div class="panel-heading">Participantes</div>
-						  <div class="panel-body">					
-								<?php
-								for($i=0;$i<sizeof($participants);$i++){?>
-									<div class="slider_search_element">
-										<?php get_participantbox_minimal($participants[$i]);?>
-									</div>						
-								<?php }
-								?>
-						  </div>
-						</div>					
-					<?php 
+                                        if($participants){
+                                            ?>
+                                                    <div class="panel panel-default">
+                                                      <div class="panel-heading">Participantes</div>
+                                                      <div class="panel-body">					
+                                                                    <?php
+                                                                    for($i=0;$i<sizeof($participants);$i++){?>
+                                                                            <div class="slider_search_element">
+                                                                                    <?php get_participantbox_minimal($participants[$i]);?>
+                                                                            </div>						
+                                                                    <?php }
+                                                                    ?>
+                                                      </div>
+                                                    </div>					
+                                            <?php                                            
+                                        }
 				}		
 			break;}
 		case "4":{
