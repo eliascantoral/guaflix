@@ -21,7 +21,15 @@
                     //$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
                             <img src="<?php echo $feat_image;?>" width="90%">
                     </a>   
-                <br><br>
+                    <br>
+                    <br>
+                        <span class='st_facebook_large' displayText='Facebook'></span>
+                        <span class='st_twitter_large' displayText='Tweet'></span>
+                        <span class='st_pinterest_large' displayText='Pinterest'></span>
+                        <span class='st_googleplus_large' displayText='Google +'></span>
+                        <span class='st_email_large' displayText='Email'></span>                
+                    <br>
+                    <br>
                     <div>
                         <?php 
                                 if(!$isfree){
