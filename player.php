@@ -12,9 +12,11 @@ if(isset($_GET["object"]) && $_GET["object"]!=""){
 		$wowza_server = get_field("servidor_wowza","option");
 		//echo $wowza_server;
 		$url = get_field("video",$_GET["object"]);
+                $url = $url['url'];
 		$url = str_replace("http://","",$url);
 		$url = str_replace("https://","",$url);
 		$url="http://".$wowza_server.":1935/vods3/_definst_/mp4:amazons3/".$url."/manifest.f4m";
+                
 		$url= urlencode($url);
 		//echo $url;
 		include_once("player/player.php");?>

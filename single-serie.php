@@ -10,21 +10,18 @@
         <div class="row">
             <div class="col-xs-12 col-md-4" align="center">
                    
-                            <?php
-                                    if(has_post_thumbnail( $object_id )){
-                                            $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                                    }else{
-                                            $feat_image = get_template_directory_uri() . '/img/imagendefault.jpg';
-                                    }?> 			
-                            <?php 						
-                    //$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
-                            <img id="d1" src="<?php echo $feat_image;?>" width="90%">
-                            <div class="contenthover">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-                                <p><a href="#" class="mybutton">Lorem ipsum</a></p>
-                            </div>                            
-                    
+                <?php
+                        if(has_post_thumbnail( $object_id )){
+                                $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                        }else{
+                                $feat_image = get_template_directory_uri() . '/img/imagendefault.jpg';
+                        }?> 			
+                <?php 						
+                //$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
+                <img id="d1" src="<?php echo $feat_image;?>" width="90%">
+                <div class="contenthover">
+                    <a href="#" class="mybutton"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+                </div>                                                
                 <br>
                 <br>
                     <span class='st_facebook_large' displayText='Facebook'></span>

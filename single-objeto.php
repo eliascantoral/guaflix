@@ -2,15 +2,16 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <?php $isfree = get_field("view_method")=="free";
-										//$time = strtotime ("today midnight");
-										//echo date('l jS \of F Y h:i:s A' , $time-1);
+$accessmethod = get_field("view_method");
+
+$video = get_field("video");
+var_dump($video);
 ?>
 
 
 <div class="container" id="object_info_wrapper">
         <div class="row">
             <div class="col-xs-12 col-md-4" align="center">
-                    <a href="#">
                             <?php
                                     if(has_post_thumbnail( $object_id )){
                                             $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -19,8 +20,10 @@
                                     }?> 			
                             <?php 						
                     //$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
-                            <img src="<?php echo $feat_image;?>" width="90%">
-                    </a>   
+                            <img id="d1" src="<?php echo $feat_image;?>" width="90%">
+                            <div class="contenthover">
+                                <a href="#" class="mybutton"><img src="<?php echo get_template_directory_uri(); ?>/img/play.png" width="90%"></a>
+                            </div>   
                     <br>
                     <br>
                         <span class='st_facebook_large' displayText='Facebook'></span>
@@ -93,6 +96,18 @@
 		ajax_async("3","&se="+<?php echo $post->ID;?>,false,"object_participant");
 		ajax_async("4","&se="+<?php echo $post->ID;?>,false,"object_rating");
 	});
+        $(".groupchange").click(function(e){
+            e.preventDefault();
+            var group = $(this).attr('rel');
+            $(".group-content").hide("fast");
+            $("#accordion_"+group).show("fast"); 
+            $(".groupchange").removeClass('active');
+            $(this).addClass('active');
+        })
+        $('#d1').contenthover({
+            overlay_background:'#000',
+            overlay_opacity:0.8
+        });         
 </script>
 
 
