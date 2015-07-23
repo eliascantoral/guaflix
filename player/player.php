@@ -14,12 +14,12 @@ document.write('<embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlaybac
 document.write('</object>');
 //]]></script>
 <noscript>
-<object width="100%" height="100%">
-<param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf"></param>
-<param name="flashvars" value="src=http%3A%2F%2F184.72.239.149%2Fvod%2Fsmil:bigbuckbunnybaseline.smil%2Fmanifest.f4m&playButtonOverlay=false&autoPlay=true&streamType=recorded&bufferingOverlay=false&initialBufferTime=5"></param>
-<param name="allowFullScreen" value="true"></param>
-<param name="allowscriptaccess" value="always"></param>
-<param name="wmode" value="opaque"></param>
-<embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="640" height="360" flashvars="src=http%3A%2F%2F184.72.239.149%2Fvod%2Fsmil:bigbuckbunnybaseline.smil%2Fmanifest.f4m&playButtonOverlay=false&autoPlay=true&streamType=recorded&bufferingOverlay=false&initialBufferTime=5"></embed>
-</object>
+    <object width="100%" height="100%">
+    <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf"></param>
+    <param name="flashvars" value="src=http%3A%2F%2F184.72.239.149%2Fvod%2Fsmil:bigbuckbunnybaseline.smil%2Fmanifest.f4m&playButtonOverlay=false&autoPlay=true&streamType=recorded&bufferingOverlay=false&initialBufferTime=5"></param>
+    <param name="allowFullScreen" value="true"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <param name="wmode" value="opaque"></param>
+    <embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="640" height="360" flashvars="src=http%3A%2F%2F184.72.239.149%2Fvod%2Fsmil:bigbuckbunnybaseline.smil%2Fmanifest.f4m&playButtonOverlay=false&autoPlay=true&streamType=recorded&bufferingOverlay=false&initialBufferTime=5"></embed>
+    </object>
 </noscript>

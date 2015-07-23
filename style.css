@@ -31,6 +31,15 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#141414', GradientType=0 );*/
 }
 
+.ajax_loader{
+    background-image: url('img/ajax-loader.gif');    
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    min-height: 200px;
+    height: auto;    
+}
+
 #canvasplayer{
     position:absolute;
     top:0;
@@ -38,6 +47,11 @@ body{
     left:0;
     right:0;
     overflow:hidden;
+    z-index: 100;
+    /*z-index:-1; /* Remove this line if it's not going to be a background! */
+}
+#canvasplayeraudio{
+    width: 100%;    
     /*z-index:-1; /* Remove this line if it's not going to be a background! */
 }
 

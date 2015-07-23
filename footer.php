@@ -50,7 +50,9 @@
 		
 	}
 	function ajax_async(action, data, update, dest){
-		
+                var backup = $("#"+dest).html();
+                $("#"+dest).html("");
+                
 		$.ajax({
 		  async:true, 
 		  cache:false,
@@ -67,15 +69,16 @@
 					 window.location.assign(dest);
 				}
 				
-			}else if(dest!=""){						
-				document.getElementById(dest).innerHTML=respuesta;
+			}else if(dest!=""){	
+				$("#"+dest).html("");
+                                $("#"+dest).html(respuesta);			
 			}
-			$("#ajax_loader").fadeOut("fast");
+			$("#"+dest).removeClass("ajax_loader");
 		  },
 		  beforeSend:function(){
-			$("#ajax_loader").fadeIn( "slow" );
+			$("#"+dest).addClass("ajax_loader");
 		  },
-		  error:function(objXMLHttpRequest){$("#ajax_loader").fadeOut("fast");console.log(objXMLHttpRequest);}
+		  error:function(objXMLHttpRequest){$("#"+dest).removeClass("ajax_loader");console.log(objXMLHttpRequest);}
 		});
 		
 	}	

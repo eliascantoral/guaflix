@@ -231,6 +231,32 @@ if(isset($_POST["action"])){
 			
 			echo json_encode ($answer);
 			break;}
+                        /********************************************** AJAX PLAYER ***************************************************/
+                        /********************************************** AJAX PLAYER ***************************************************/
+                        /********************************************** AJAX PLAYER ***************************************************/
+                        /********************************************** AJAX PLAYER ***************************************************/
+                        /********************************************** AJAX PLAYER ***************************************************/
+                        
+                        case "audioplayer":{                                
+                            ?>
+                                <div id="canvasplayeraudio" align="center">
+                                        <?php 
+                                        $wowza_server = get_field("servidor_wowza","option");
+                                        $url="http://".$wowza_server.":1935/vods3/_definst_/mp3:amazons3/guaflix-vid-stream/wp-content/uploads/2015/07/Queen-Bohemian-Rhapsody.mp3/manifest.f4m";
+                                        $url= urlencode($url);
+                                        //echo $url;
+                                        ///include_once("player/audioplayer.php");?>                                                ﻿                                        
+                                        <object width="300px" height="40px">
+                                            <param name="movie" value="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf"></param>
+                                            <param name="flashvars" value="src=<?php echo $url;?>&playButtonOverlay=false&autoPlay=true&streamType=recorded&bufferingOverlay=false&initialBufferTime=5"></param>
+                                            <param name="allowscriptaccess" value="always"></param>
+                                            
+                                            <embed src="http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="100%" height="100%" flashvars="src=<?php echo $url;?>&playButtonOverlay=false&autoPlay=true&streamType=recorded&bufferingOverlay=false&initialBufferTime=5"></embed>
+                                        </object>                                                
+                                </div>  
+                            <?php 
+                            break;}
+                        
 
 
 
