@@ -18,7 +18,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl-carousel/owl.carousel.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jqueryui/jquery-ui.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/style/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.contenthover.min.js"></script>
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "8cd12b29-5346-47d7-aac0-79e1d18d9aa1", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
