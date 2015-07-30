@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <?php $isfree = get_field("view_method")=="free";
@@ -39,7 +40,7 @@
                                             <?php                                                 
                                                 switch($mimetype[0]){
                                                     case "video":{?>href="<?php echo get_variable("player",$object_id);?>&object=<?php echo $post->ID;?>" <?php break;}
-                                                    case "audio":{?>href="#" onclick="ajax_async('audioplayer', '', false, 'playaction')" <?php break;}
+                                                    case "audio":{?>href="#" onclick="ajax_async('audioplayer2', '', false, 'playaction')" <?php break;}
                                                     default :?>href="<?php echo $object['url']?>"<?php
                                                 }?>
                                             class="mybutton"><img src="<?php echo get_template_directory_uri(); ?>/img/play.png" width="90%"></a>

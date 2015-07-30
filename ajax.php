@@ -256,6 +256,62 @@ if(isset($_POST["action"])){
                                 </div>  
                             <?php 
                             break;}
+                        case "audioplayer2":{                                
+                            ?>
+                                <link href="<?php echo get_template_directory_uri(); ?>/audioplayer/lib/circle-player/skin/circle.player.css" rel="stylesheet" type="text/css" />                                
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/lib/jquery.min.js"></script>
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/dist/jplayer/jquery.jplayer.min.js"></script>
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/dist/add-on/jquery.jplayer.inspector.min.js"></script>
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/lib/circle-player/js/jquery.transform2d.js"></script>
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/lib/circle-player/js/jquery.grab.js"></script>
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/lib/circle-player/js/mod.csstransforms.min.js"></script>
+                                <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/audioplayer/lib/circle-player/js/circle.player.js"></script>
+                               
+                                
+                                <script type="text/javascript">
+                                //<![CDATA[
+
+                                $(document).ready(function(){
+                                        var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+                                        {
+                                                mp3: "https://s3.amazonaws.com/guaflix-vid-stream/wp-content/uploads/2015/07/Queen-Bohemian-Rhapsody.mp3"		
+                                        }, {
+                                                cssSelectorAncestor: "#cp_container_1",
+                                                swfPath: "<?php echo get_template_directory_uri(); ?>/audioplayer/dist/jplayer",
+                                                supplied: "mp3",
+                                                preload: "none",
+                                                wmode: "window",
+                                                useStateClassSkin: true,
+                                                autoBlur: false,
+                                                keyEnabled: true
+                                        }); 
+                                        setTimeout(function(){$(".cp-play").trigger( "click" );},100);
+                                });                                
+                                //]]>
+                                </script> 
+                                <div id="canvasplayeraudio" align="center">
+                                    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+
+                                    <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
+
+                                    <div id="cp_container_1" class="cp-container">
+                                            <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+                                                    <div class="cp-buffer-1"></div>
+                                                    <div class="cp-buffer-2"></div>
+                                            </div>
+                                            <div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+                                                    <div class="cp-progress-1"></div>
+                                                    <div class="cp-progress-2"></div>
+                                            </div>
+                                            <div class="cp-circle-control"></div>
+                                            <ul class="cp-controls">
+                                                    <li><a class="cp-play" tabindex="1">play</a></li>
+                                                    <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+                                            </ul>
+                                    </div> 
+                                </div>
+                            <?php 
+                            break;}                            
                         
 
 
