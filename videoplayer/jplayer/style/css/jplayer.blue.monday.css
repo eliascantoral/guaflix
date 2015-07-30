@@ -103,7 +103,7 @@
 /* @group CONTROLS */
 .jp-controls-holder {
   clear: both;
-  width: 440px;
+  width: 540px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -113,7 +113,8 @@
 .jp-interface .jp-controls {
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden; 
+  width: 150px !important;}
 
 .jp-audio .jp-controls {
   width: 380px;
@@ -142,11 +143,12 @@
   overflow: hidden;
   text-indent: -9999px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 5px;}
 
 .jp-play {
   width: 40px;
-  height: 40px; }
+  height: 40px;}
 
 .jp-play {
   background: url("../image/jplayer.blue.monday.jpg") 0 0 no-repeat; }
@@ -167,14 +169,14 @@
 
 .jp-stop {
   background: url("../image/jplayer.blue.monday.jpg") 0 -83px no-repeat;
-  margin-left: 10px; }
+  }
 
 .jp-stop:focus {
   background: url("../image/jplayer.blue.monday.jpg") -29px -83px no-repeat; }
 
 .jp-back {
   background: url("../image/jplayer.blue.monday.jpg") 0 -113px no-repeat;
-  margin-left: 10px; }
+  }
 
 .jp-back:focus {
   background: url("../image/jplayer.blue.monday.jpg") -29px -113px no-repeat; }
@@ -497,11 +499,6 @@ span.jp-artist {
   /* need this for IE6 */
   border: none;
   cursor: pointer; }
-.jp-toggles .jp-back{
-    width: 28px;
-    height: 28px;
-    margin-top: 6px;    
-}
 .jp-full-screen {
   background: url("../image/jplayer.blue.monday.jpg") 0 -310px no-repeat;
   margin-left: 20px; }

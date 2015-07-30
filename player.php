@@ -11,17 +11,17 @@ if(isset($_GET["object"]) && $_GET["object"]!=""){
 		<?php 
 		$wowza_server = get_field("servidor_wowza","option");
 		//echo $wowza_server;
-		$url = get_field("video",$_GET["object"]);
+            $url = get_field("video",$_GET["object"]);
                 $url = $url['url'];
 		$url = str_replace("http://","",$url);
 		$url = str_replace("https://","",$url);
                                 
-		$url="http://".$wowza_server.":1935/vods3/_definst_/mp4:amazons3/".$url."/manifest.f4m";
+		$url="rtmp://".$wowza_server.":1935/vods3/mp4:amazons3/".$url;
                 
                 //$url="http://".$wowza_server.":1935/vods3/_definst_/mp3:amazons3/guaflix-vid-stream/wp-content/uploads/2015/07/Queen-Bohemian-Rhapsody.mp3/manifest.f4m";
-		$url= urlencode($url);
+		//$url= urlencode($url);
 		//echo $url;
-		include_once("player/player.php");?>
+		include_once("videoplayer/video.php");?>
 	</div>
 <?php
 	
